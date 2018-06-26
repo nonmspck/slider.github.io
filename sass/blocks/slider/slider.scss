@@ -34,10 +34,17 @@
             opacity: 0;
         }
     }
+
+    @media (max-width: 639px) {
+        padding: 0;
+    }
 }
 
 .slider__item {
     width: 490px;
+    height: 447px;
+
+    position: relative;
 
     flex-shrink: 0;
     align-self: stretch;
@@ -46,6 +53,29 @@
 
     &-one {
         background: #da3832;
+
+        &::after {
+            content: "";
+            display: block;
+            width: 292px;
+            height: 104px;
+
+            position: absolute;
+            top: 48%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            background-image: url("../img/verizon-logo.png");
+            background-size: 100%; 
+            
+            @media screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx), screen and (min-device-pixel-ratio: 2) {
+                background-image: url("../img/verizon-logo@2x.jpg");
+            }
+            
+            @media screen and (min-resolution: 288dpi), screen and (min-resolution: 3dppx), screen and (min-device-pixel-ratio: 3) {
+                background-image: url("../img/verizon-logo@3x.jpg");
+            }
+        }
     }
 
     &-two {
@@ -62,5 +92,28 @@
 
     &-three {
         background: #47ace9;
+
+        &::after {
+            content: "";
+            display: block;
+            width: 292px;
+            height: 104px;
+
+            position: absolute;
+            top: 48%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            background-image: url("../img/verizon-logo.png");
+            background-size: 100%;
+            
+            @media screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx), screen and (min-device-pixel-ratio: 2) {
+                background-image: url("../img/verizon-logo@2x.jpg");
+            }
+            
+            @media screen and (min-resolution: 288dpi), screen and (min-resolution: 3dppx), screen and (min-device-pixel-ratio: 3) {
+                background-image: url("../img/verizon-logo@3x.jpg");
+            }
+        }
     }
 }

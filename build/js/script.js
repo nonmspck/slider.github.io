@@ -1,6 +1,6 @@
 $(document).ready(function () {
     $(".slider").slick({
-        infinite: false,
+        infinite: true,
         slidesToShow: 2,
         slidesToScroll: 1,
         arrows: false,
@@ -14,17 +14,17 @@ $(document).ready(function () {
                 }
             }
         ]
-    }).on("mousewheel", function (event) {
+    }).on("wheel", function (event) {
         event.preventDefault();
-        if (event.deltaX > 0 || event.deltaY < 0) {
-            $(this).slick("slickNext");
-        } else if (event.deltaX < 0 || event.deltaY > 0) {
-            $(this).slick("slickPrev");
-    }}).on("beforeChange", function (event, slick, currentSlide, nextSlide) {
-        if ( slick.slideCount === nextSlide + $(this).slick( "slickGetOption", "slidesToShow" ) ) {
-            $(this).addClass("slider-last");
-        } else {
+        if (event.originalEvent.deltaY < 0) {
+            $(this).slick('slickNext');
+          } else {
+            $(this).slick('slickPrev');
+          }}).on("beforeChange", function (event, slick, currentSlide, nextSlide) {
+        if ( slick.slideCount > nextSlide + $(this).slick( "slickGetOption", "slidesToShow" ) ) {
             $(this).removeClass("slider-last");
+        } else {
+            $(this).addClass("slider-last");
         }
     });
 });

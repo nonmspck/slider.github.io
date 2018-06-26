@@ -5,6 +5,10 @@
         left: 1px solid #ccc;
         right: 1px solid #ccc;
     }
+
+    @media (max-width: 639px) {
+        width: 320px;
+    }
         
     @media (min-width: 950px) {
         width: 950px;

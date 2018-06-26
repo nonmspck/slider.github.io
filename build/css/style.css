@@ -453,7 +453,7 @@ template {
   padding: 0 150px 0; }
 
 .gal__lead {
-  font-size: 60px;
+  font-size: 25px;
   line-height: 0.9; }
 
 .gal__icon {
@@ -494,21 +494,47 @@ template {
 
 .slider__item {
   width: 490px;
+  height: 447px;
+  position: relative;
   flex-shrink: 0;
   align-self: stretch;
   list-style: none; }
   .slider__item-one {
     background: #da3832; }
+    .slider__item-one::after {
+      content: "";
+      display: block;
+      width: 292px;
+      height: 104px;
+      position: absolute;
+      top: 48%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%);
+      background-image: url("../img/verizon-logo.png");
+      background-size: 100%; }
   .slider__item-two {
     background: #000 url("../img/gal-img.jpg") center top; }
   .slider__item-three {
     background: #47ace9; }
+    .slider__item-three::after {
+      content: "";
+      display: block;
+      width: 292px;
+      height: 104px;
+      position: absolute;
+      top: 48%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%);
+      background-image: url("../img/verizon-logo.png");
+      background-size: 100%; }
 
 .slide {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 490px;
+  width: 100%;
   height: 447px;
   font: 500 18px/1.2 "Geometria";
   color: #fff;
@@ -528,22 +554,61 @@ template {
   margin-top: 34px; }
   .slide__btn:hover {
     color: #000; }
+  @media (max-width: 949px) and (min-width: 640px) {
+    .gal__title {
+      padding-right: 50px; } }
+  @media (min-width: 640px) {
+    .gal__lead {
+      font-size: 40px; } }
   @media (min-width: 950px) {
     .container {
-      width: 950px; } }
+      width: 950px; }
+    .gal__lead {
+      font-size: 60px; } }
   @media (min-width: 1440px) {
     .container {
       width: 1440px; } }
-  @media (max-width: 949px) {
+  @media (max-width: 639px) {
+    .container {
+      width: 320px; }
+    .gal {
+      padding: 40px 0 60px; }
     .gal__title {
-      padding-right: 50px; }
-    .gal__lead {
-      font-size: 40px; }
+      flex-wrap: wrap;
+      margin-bottom: 30px;
+      padding: 0 10px; }
+  .gal__btn {
+    padding: 14px 16px 12px; }
+    .gal__icon {
+      width: 20px;
+      height: 20px; }
+    .gal__caption {
+      display: block;
+      padding-top: 20px;
+      position: static;
+      -webkit-transform: none;
+              transform: none;
+      font-size: 30px;
+      text-align: center; }
+    .slider {
+      padding: 0; }
+    .slide__lead {
+      font-size: 35px;
+      line-height: 1; } }
+  @media (max-width: 949px) {
       .slider::after {
         display: none; } }
   @media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx), screen and (min-device-pixel-ratio: 2) {
+        .slider__item-one::after {
+          background-image: url("../img/verizon-logo@2x.jpg"); }
       .slider__item-two {
-        background-image: url("../img/gal-img@2x.jpg"); } }
+        background-image: url("../img/gal-img@2x.jpg"); }
+        .slider__item-three::after {
+          background-image: url("../img/verizon-logo@2x.jpg"); } }
   @media screen and (-webkit-min-device-pixel-ratio: 3), screen and (min-resolution: 288dpi), screen and (min-resolution: 3dppx), screen and (min-device-pixel-ratio: 3) {
+        .slider__item-one::after {
+          background-image: url("../img/verizon-logo@3x.jpg"); }
       .slider__item-two {
-        background-image: url("../img/gal-img@3x.jpg"); } }
+        background-image: url("../img/gal-img@3x.jpg"); }
+        .slider__item-three::after {
+          background-image: url("../img/verizon-logo@3x.jpg"); } }

@@ -2,8 +2,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-
-    width: 490px;
+    
+    width: 100%;
     height: 447px;
 
     font: 500 18px/1.2 "Geometria";
@@ -18,6 +18,11 @@
     font-weight: 700;
     font-size: 50px;
     line-height: 0.85;
+
+    @media (max-width: 639px) {
+        font-size: 35px;
+        line-height: 1;
+    }
 }
 
 .slide__text {
