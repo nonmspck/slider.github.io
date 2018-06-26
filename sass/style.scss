@@ -1,8 +1,12 @@
-@import "_normalize.scss";
+@import "normalize.scss";
+@include normalize();
 @import "_mixins.scss";
 @import "_variables.scss";
 
+@import "main.scss";
+
 @import "blocks/page/page.scss";
+@import "blocks/container/container.scss";
 @import "blocks/btn/btn.scss";
 @import "blocks/gal/gal.scss";
 @import "blocks/slider/slider.scss";

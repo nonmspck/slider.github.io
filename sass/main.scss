@@ -1,0 +1,15 @@
+@font-face {
+    font-weight: 500;
+    font-family: "Geometria";
+    src: url("../fonts/Geometria-Medium.woff");
+}
+
+@font-face {
+    font-weight: 700;
+    font-family: "Geometria";
+    src: url("../fonts/Geometria-Bold.woff");
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}

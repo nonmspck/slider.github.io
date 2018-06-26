@@ -1,0 +1,66 @@
+.slider {
+    display: flex;
+    height: 447px;
+
+    position: relative;
+
+    margin: 0;
+    padding: 0;
+    padding-left: 150px;
+
+    &::after {
+        content: "";
+
+        width: 230px;
+
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+
+        background-image: linear-gradient(to left, #000000, rgba(0, 0, 0, 0));
+
+        transition: 0.3s;
+
+        opacity: 1;
+
+        @media (max-width: 949px) {
+            display: none;
+        }
+    }
+
+    &-last {
+        &::after {
+            opacity: 0;
+        }
+    }
+}
+
+.slider__item {
+    width: 490px;
+
+    flex-shrink: 0;
+    align-self: stretch;
+
+    list-style: none;
+
+    &-one {
+        background: #da3832;
+    }
+
+    &-two {
+        background: #000 url("../img/gal-img.jpg") center top; 
+
+        @media screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx), screen and (min-device-pixel-ratio: 2) {
+            background-image: url("../img/gal-img@2x.jpg");
+        }
+
+        @media screen and (min-resolution: 288dpi), screen and (min-resolution: 3dppx), screen and (min-device-pixel-ratio: 3) {
+            background-image: url("../img/gal-img@3x.jpg");
+        }
+    }
+
+    &-three {
+        background: #47ace9;
+    }
+}

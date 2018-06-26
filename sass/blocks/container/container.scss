@@ -1,0 +1,16 @@
+.container {
+    width: 640px;
+    margin: 0 auto;
+    border: {
+        left: 1px solid #ccc;
+        right: 1px solid #ccc;
+    }
+        
+    @media (min-width: 950px) {
+        width: 950px;
+    }
+        
+    @media (min-width: 1440px) {
+        width: 1440px;
+    }
+}

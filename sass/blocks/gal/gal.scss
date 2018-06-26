@@ -1,0 +1,54 @@
+.gal{
+    padding: 85px 0 120px;
+
+    position: relative;
+
+    background-color: #d1d1d4;
+
+    font: bold 18px "Geometria";
+    color: #fff;
+}
+
+.gal__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 45px;
+    padding: 0 150px 0;
+
+    @media (max-width: 949px) {
+        padding-right: 50px;
+    }
+}
+
+.gal__lead {
+    font-size: 60px;
+    line-height: 0.9;
+    
+    @media (max-width: 949px) {
+        font-size: 40px;
+    }
+}
+
+.gal__icon {
+    width: 40px;
+    height: 40px;
+
+    background-image: url("../img/pointer.svg");
+}
+
+.gal__caption {
+    position: absolute;
+    left: -50px;
+    bottom: 250px;
+
+    transform: rotate(-90deg);
+
+    font-size: 50px;
+    line-height: 1.1;
+
+    &-grey {
+        color: #9d9fa2;
+    }
+}

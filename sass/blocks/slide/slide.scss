@@ -1,0 +1,35 @@
+.slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 490px;
+    height: 447px;
+
+    font: 500 18px/1.2 "Geometria";
+    color: #fff;
+
+    text-align: center;
+}
+
+.slide__lead {
+    margin-top: 107px;
+
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 0.85;
+}
+
+.slide__text {
+    width: 250px;
+    margin-top: 25px;
+}
+
+.slide__btn {
+    margin-top: 34px;
+
+    &:hover {
+        color : #000;
+    }
+
+}

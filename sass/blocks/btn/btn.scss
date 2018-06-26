@@ -1,0 +1,19 @@
+.btn {
+
+    padding: 17px 20px 15px;
+    border: 2px solid #fff;
+
+    border-radius: 4px;
+
+    text-transform: uppercase;
+    text-decoration: none;
+
+    font: bold 16px/1 "Geometria";
+    color: #fff;
+
+    &:hover {
+        background-color: #fff;
+
+        color: #d1d1d4;
+    }
+}
