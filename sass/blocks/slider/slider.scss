@@ -24,7 +24,7 @@
 
         opacity: 1;
 
-        @media (max-width: 949px) {
+        @media (max-width: 639px) {
             display: none;
         }
     }
@@ -36,7 +36,13 @@
     }
 
     @media (max-width: 639px) {
+        width: 490px;
+        margin: 0 auto;
         padding: 0;
+    }
+
+    @media (max-width: 489px) {
+        width: 100%;
     }
 }
 
@@ -51,69 +57,77 @@
 
     list-style: none;
 
+    @media (max-width: 489px) {
+        width: 100vw;
+    }
+
     &-one {
-        background: #da3832;
-
-        &::after {
-            content: "";
-            display: block;
-            width: 292px;
-            height: 104px;
-
-            position: absolute;
-            top: 48%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-
-            background-image: url("../img/verizon-logo.png");
-            background-size: 100%; 
-            
-            @media screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx), screen and (min-device-pixel-ratio: 2) {
-                background-image: url("../img/verizon-logo@2x.jpg");
-            }
-            
-            @media screen and (min-resolution: 288dpi), screen and (min-resolution: 3dppx), screen and (min-device-pixel-ratio: 3) {
-                background-image: url("../img/verizon-logo@3x.jpg");
-            }
+        background: #da3832 url("../img/verizon-logo.png") center center no-repeat;
+        background-size: 292px 104px; 
+   
+        @media screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx), screen and (min-device-pixel-ratio: 2) {
+            background-image: url("../img/verizon-logo@2x.png");
         }
+            
+        @media screen and (min-resolution: 288dpi), screen and (min-resolution: 3dppx), screen and (min-device-pixel-ratio: 3) {
+            background-image: url("../img/verizon-logo@3x.png");
+        }   
     }
 
     &-two {
         background: #000 url("../img/gal-img.jpg") center top; 
-
+        background-size: 490px 447px; 
+    
         @media screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx), screen and (min-device-pixel-ratio: 2) {
-            background-image: url("../img/gal-img@2x.jpg");
+           background-image: url("../img/gal-img@2x.jpg");
+           background-size: 490px 447px; 
         }
-
+    
         @media screen and (min-resolution: 288dpi), screen and (min-resolution: 3dppx), screen and (min-device-pixel-ratio: 3) {
             background-image: url("../img/gal-img@3x.jpg");
+            background-size: 490px 447px; 
         }
     }
 
     &-three {
-        background: #47ace9;
-
-        &::after {
-            content: "";
-            display: block;
-            width: 292px;
-            height: 104px;
-
-            position: absolute;
-            top: 48%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-
-            background-image: url("../img/verizon-logo.png");
-            background-size: 100%;
+        background: #47ace9 url("../img/verizon-logo.png") center center no-repeat;
+        background-size: 292px 104px; 
+   
+        @media screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx), screen and (min-device-pixel-ratio: 2) {
+            background-image: url("../img/verizon-logo@2x.png");
+        }
             
-            @media screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx), screen and (min-device-pixel-ratio: 2) {
-                background-image: url("../img/verizon-logo@2x.jpg");
-            }
-            
-            @media screen and (min-resolution: 288dpi), screen and (min-resolution: 3dppx), screen and (min-device-pixel-ratio: 3) {
-                background-image: url("../img/verizon-logo@3x.jpg");
-            }
+        @media screen and (min-resolution: 288dpi), screen and (min-resolution: 3dppx), screen and (min-device-pixel-ratio: 3) {
+            background-image: url("../img/verizon-logo@3x.png");
         }
     }
+    
+    &-four {
+        background: #ae47e9 url("../img/verizon-logo.png") center center no-repeat;
+        background-size: 292px 104px; 
+   
+        @media screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx), screen and (min-device-pixel-ratio: 2) {
+            background-image: url("../img/verizon-logo@2x.png");
+        }
+            
+        @media screen and (min-resolution: 288dpi), screen and (min-resolution: 3dppx), screen and (min-device-pixel-ratio: 3) {
+            background-image: url("../img/verizon-logo@3x.png");
+        }
+    }
+        // styles for hover
+    
+        // &-two {
+        //     background: #000 url("../img/gal-img.jpg") center top; 
+        //     background-size: 490px 447px; 
+    
+        //     @media screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx), screen and (min-device-pixel-ratio: 2) {
+        //         background-image: url("../img/gal-img@2x.jpg");
+        //         background-size: 490px 447px; 
+        //     }
+    
+        //     @media screen and (min-resolution: 288dpi), screen and (min-resolution: 3dppx), screen and (min-device-pixel-ratio: 3) {
+        //         background-image: url("../img/gal-img@3x.jpg");
+        //         background-size: 490px 447px; 
+        //     }
+        // }
 }

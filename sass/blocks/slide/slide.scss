@@ -1,15 +1,38 @@
 .slide {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
     width: 100%;
     height: 447px;
+
+    position: relative;
 
     font: 500 18px/1.2 "Geometria";
     color: #fff;
 
     text-align: center;
+
+    &:hover {
+        .slide__hover {
+            opacity: 1;
+        }
+    }
+}
+
+.slide__hover {
+    display: flex;
+
+    flex-direction: column;
+    align-items: center;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    background: rgba(0, 0, 0, .35);
+
+    opacity: 0;
+
+    transition: 0.2s;
 }
 
 .slide__lead {
@@ -19,7 +42,7 @@
     font-size: 50px;
     line-height: 0.85;
 
-    @media (max-width: 639px) {
+    @media (max-width: 422px) {
         font-size: 35px;
         line-height: 1;
     }

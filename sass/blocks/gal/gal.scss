@@ -28,8 +28,11 @@
     @media (max-width: 639px) {
         flex-wrap: wrap;
         margin-bottom: 30px;
-        padding: 0 10px;
+        padding: 0 25px;
 
+    }
+    @media (max-width: 369px) {
+        padding: 0 10px;
     }
 }
 
@@ -40,7 +43,7 @@
 }
 
 .gal__lead {
-    font-size: 25px;
+    font-size: 30px;
     line-height: 0.9;
     
     @media (min-width: 640px) {
